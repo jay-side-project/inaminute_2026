@@ -22,10 +22,9 @@
             'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=yes, viewport-fit=cover'
           );
         } else {
-          const scale = deviceWidth / BASE_WIDTH;
           meta.setAttribute(
             'content',
-            `width=${BASE_WIDTH}, initial-scale=${scale}, maximum-scale=${scale}, minimum-scale=${scale}, user-scalable=no, viewport-fit=cover`
+            `width=${BASE_WIDTH}, user-scalable=yes, viewport-fit=cover`
           );
         }
       }
